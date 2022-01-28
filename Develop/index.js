@@ -13,7 +13,7 @@ const questions = [
 {
     type:"input",
     name:"description",
-    message: "Purpose of your application?"
+    message: "Provide primary functionality of your application?"
 },
 {
     type:"input",
@@ -22,23 +22,37 @@ const questions = [
 },
 {
     type:"input",
-    name:"contributing",
+    name:"usage",
+    message: "Please provide usage instruction for your application."
+},
+{
+    type:"input",
+    name:"test",
+    message: "Please list any test instructions for your application."
+},
+{
+    type:"input",
+    name:"contribution",
     message: "Please list any contributors to your application?"
 },
 {
     type:"input",
-    name:"description",
-    message: "Purpose of your application?"
+    name:"email",
+    message: "For any questions, please enter your email."
 },
-//License is different
+{
+    type:"input",
+    name:"github",
+    message: "Please enter your github username."
+},
+//License selection from list of licensing organizatiions
+
 {
     type:"list",
     name:"license",
-    message: "Please provide your license issuer for your application?",
-    choices:["MIT", "Mozilla", "IEE", "MS", "ETA", "ISC", "N/A"]
+    message:"Please provide your license issuer for your application?",
+    choices:["MIT", "Apache", "Mozilla", "GNU", "ISC", "N/A"]
 },
-
-
 
 ];
 
